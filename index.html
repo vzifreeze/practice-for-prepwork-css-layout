@@ -7,62 +7,64 @@
         <form action="/form-handling-url" method="post">
             <fieldset>
             <legend>Add user</legend>
-        
-            <div>
-                <label for="firstName">First name</label>
-                <input type="text" id="firstName" name="first_name">
-            </div>
-        
-            <div>
-                <label for="lastName">Last name</label>
-                <input type="text" id="lastName" name="last_name">
-            </div>
-        
-            <div>
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email_address">
-            </div>
-        
-            <div>
-                <label for="role">Status</label>
-                <select id="role" name="user_role_name">
-                <option value="student">Student</option>
-                <option value="instructor">Instructor</option>
-                <option value="guest">Guest</option>
-                </select>
-            </div>
+            <div class="fspace">  
+                <div class="fspace__text-input">
+                    <label for="firstName"><strong>First Name:</strong></label>
+                    <input type="text" id="firstName" name="first_name">
+                </div>
             
-            <div>
-                <p>Choose your favorite Web language:</p>
-                <input type="radio" id="html" name="fav_language" value="HTML">
-                <label for="html">HTML</label><br>
-                <input type="radio" id="css" name="fav_language" value="CSS">
-                <label for="css">CSS</label><br>
-                <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-                <label for="javascript">JavaScript</label>
-            </div>
+                <div class="fspace__text-input">
+                    <label for="lastName"><strong>Last Name:</strong></label>
+                    <input type="text" id="lastName" name="last_name">
+                </div>
+            
+                <div class="fspace__text-input">
+                    <label for="email"><strong>Email:</strong></label>
+                    <input type="email" id="email" name="email_address">
+                </div>
+                
+                <div class="fspace__status-date">
+                    <div class="status">
+                        <label for="status"><strong>Status:</strong></label>
+                        <input type="text" id="status" name="status">
+                    </div>
+                
 
-            <div>
-                <label for="comments">Comments</label>
-                <textarea id="comments" name="comments"></textarea>
-            </div>
+            
+                    <div class="date">
+                        <label for="date"><strong>Date:</strong></label>
+                        <input type="text" id="date" name="date">
+                    </div>           
+                </div>
+                
+                <div>
+                    <p>Choose your favorite Web language:</p>
+                    <div class="fspace__radio">
+                    <input type="radio" id="html" name="fav_language" value="HTML">
+                    <label for="html">HTML</label><br>
+                    <input type="radio" id="css" name="fav_language" value="CSS">
+                    <label for="css">CSS</label><br>
+                    <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                    <label for="javascript">JS</label>
+                    </div>
+                </div>
 
-            <div>
-                <label for="date">Date</label>
-                <input type="date" id="date" name="date">
+                <div>
+                    <label for="comments"><strong>Comments:</strong></label>
+                    <textarea id="comments" name="comments"></textarea>
+                </div>
+                            
+                <div class="fspace__checkbox">
+                    <input type="checkbox" id="signup" name="signup" value="Signup">
+                    <label for="signup">Sign up for news</label><br>
+                    <input type="checkbox" id="terms" name="terms" value="Terms">
+                    <label for="terms"> Agree to terms</label>
+                </div>
+            
+                <div class="fspace__button">
+                    <button type="submit">Submit</button>
+                </div>
             </div>
-
-            <div>
-                <input type="checkbox" id="signup" name="signup" value="Signup">
-                <label for="signup">Sign up for news letter</label><br>
-                <input type="checkbox" id="terms" name="terms" value="Terms">
-                <label for="terms"> Agree to terms and conditions</label>
-            </div>
-        
-            <div>
-                <button type="submit">Submit</button>
-            </div>
-        
             </fieldset>
         </form>
     </body>

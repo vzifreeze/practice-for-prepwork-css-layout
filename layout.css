@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 15px; 
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 20px 20px;
+    background-image:
+      linear-gradient(to right, rgb(209, 209, 209) 1px, transparent 1px),
+      linear-gradient(to bottom, rgb(209, 209, 209) 1px, transparent 1px);
+  }
+
+
+
+fieldset {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    padding: 10px 100px 30px;
+    border: 2px solid rgba(0, 0, 0, 0.514);
+}
+
+legend {
+    background-color: white;
+    border: 2px solid rgba(0, 0, 0, 0.514);
+    padding: 5px;
+}
+
+.fspace {
+    margin: 25px;
+}
+
+.fspace__status-date{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    column-gap: 10px;
+}
+
+
+.fspace__text-input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+
+.fspace__text-input, .fspace__status-date label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fspace__button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    width: 100%;
+    height: 26px;
+    border: 2px solid rgba(0, 0, 0, 0.514);
+}
+
+textarea {
+    width: 100%;
+    height: 60px;
+    border: 2px solid rgba(0, 0, 0, 0.514);
+}
+
+.fspace__radio {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+   
+}
+
+.fspace__checkbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+       
+}
+
+input[type="checkbox"] {
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+button {
+    width: 120px;
+    height: 25px;
+    background-color: white;
+    margin-top: 20px;
+}
